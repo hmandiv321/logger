@@ -33,10 +33,10 @@ logger.error('foo)
 logger.log('foo');
 
 //cyan color
-logger.info(JSON.stringify(data));
+logger.info(data);
 
 //green color
-logger.success(JSON.stringify(data),'foo');
+logger.success(data,'foo');
 
 //yellow color
 logger.warning('foo');
