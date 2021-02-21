@@ -12,11 +12,6 @@ The simplest way to do this is to e.g const logger = require("logger"):
 ``` js
 const logger = require('../logger');
 
-const data = [
-  {
-    "foo": [{ foo: "foo" }],
-  }
-]
  try {
    // do something
  } catch (error) {
