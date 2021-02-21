@@ -22,7 +22,7 @@ const logger = require('../logger');
 ### Other Examples
 ``` js
 // red color 
-logger.error('foo)
+logger.error('foo')
 
 //white color
 logger.log('foo');
