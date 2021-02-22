@@ -1,4 +1,3 @@
-const virt = require('./virt');
 const {
   reset,
   redString,
@@ -15,6 +14,5 @@ module.exports = {
   success: (...data) => logger(greenString, ...data, reset),
   warning: (...data) => logger(yellowString, ...data, reset),
   info: (...data) => logger(cyanString, ...data, reset),
-  log: (...data) => logger(whiteString, ...data, reset),
-  virt,
+  log: (...data) => logger(whiteString, ...data, reset)
 };
