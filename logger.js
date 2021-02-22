@@ -1,3 +1,4 @@
+const virt = require('./virt');
 const {
   reset,
   redString,
@@ -7,12 +8,13 @@ const {
   whiteString,
 } = require('./styles');
 
-const logger = (...data) => console.log(...data);
+const logger = (...data) => console.log(...data, reset);
 
 module.exports = {
-  error: (...data) => logger(redString, ...data, reset),
-  success: (...data) => logger(greenString, ...data, reset),
-  warning: (...data) => logger(yellowString, ...data, reset),
-  info: (...data) => logger(cyanString, ...data, reset),
-  log: (...data) => logger(whiteString, ...data, reset)
+  error: (...data) => logger(redString, ...data),
+  success: (...data) => logger(greenString, ...data),
+  warning: (...data) => logger(yellowString, ...data),
+  info: (...data) => logger(cyanString, ...data),
+  log: (...data) => logger(whiteString, ...data),
+  virt,
 };
